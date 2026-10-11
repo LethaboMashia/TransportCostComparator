@@ -1,4 +1,4 @@
-package com.example.transportcostcomparator; // match your actual package
+package com.example.transportcostcomparator;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -58,6 +58,11 @@ public class DetailsFragment extends Fragment {
             double distance = Double.parseDouble(distanceStr);
             double costPerKm = Double.parseDouble(costStr);
             int days = Integer.parseInt(daysStr);
+
+            if (distance <= 0 || costPerKm <= 0 || days < 1 || days > 31) {
+                Toast.makeText(requireContext(), "Distance and cost must be above 0, and travel days must be 1 to 31", Toast.LENGTH_SHORT).show();
+                return;
+            }
 
             Transport transport = new Transport(mode, distance, costPerKm, days, transportType);
             TransportCalculator calculator = new TransportCalculator();

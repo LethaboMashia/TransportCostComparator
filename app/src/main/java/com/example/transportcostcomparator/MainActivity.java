@@ -1,4 +1,4 @@
-package com.example.transportcostcomparator; // match your actual package
+package com.example.transportcostcomparator;
 
 import android.os.Bundle;
 import androidx.activity.EdgeToEdge;

@@ -1,4 +1,4 @@
-package com.example.transportcostcomparator; // match your actual package
+package com.example.transportcostcomparator;
 
 public class TransportData {
     public static String mode = "";

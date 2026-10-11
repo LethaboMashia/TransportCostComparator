@@ -1,4 +1,4 @@
-package com.example.transportcostcomparator; // must match MainActivity.java exactly
+package com.example.transportcostcomparator;
 
 import android.os.Bundle;
 import android.speech.tts.TextToSpeech;
