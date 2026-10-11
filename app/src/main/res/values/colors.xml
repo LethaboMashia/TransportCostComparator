@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="topBarBlue">#1E6FFF</color>
+    <color name="accentTeal">#29B6D8</color>
+    <color name="screenBackground">#F2F2F2</color>
+    <color name="darkText">#1A1A2E</color>
+</resources>

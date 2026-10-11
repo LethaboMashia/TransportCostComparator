@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingHorizontal="24dp"
+    android:paddingTop="48dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="TRANSPORT USAGE DETAILS"
+        android:textColor="@color/darkText"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_marginBottom="32dp" />
+
+    <EditText
+        android:id="@+id/etModeOfTransport"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:hint="Mode of Transport"
+        android:paddingHorizontal="20dp"
+        android:background="@drawable/rounded_input"
+        android:inputType="text"
+        android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:id="@+id/etDistancePerDay"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:hint="Distance Travelled per Day (km)"
+        android:paddingHorizontal="20dp"
+        android:background="@drawable/rounded_input"
+        android:inputType="numberDecimal"
+        android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:id="@+id/etCostPerKm"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:hint="Cost per Kilometre (R/km)"
+        android:paddingHorizontal="20dp"
+        android:background="@drawable/rounded_input"
+        android:inputType="numberDecimal"
+        android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:id="@+id/etTravelDays"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:hint="Travel Days per Month"
+        android:paddingHorizontal="20dp"
+        android:background="@drawable/rounded_input"
+        android:inputType="number"
+        android:layout_marginBottom="24dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Transport Type"
+        android:textColor="@color/accentTeal"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_marginBottom="8dp" />
+
+    <Spinner
+        android:id="@+id/spinnerTransportType"
+        android:layout_width="wrap_content"
+        android:layout_height="56dp"
+        android:background="@drawable/rounded_input"
+        android:paddingHorizontal="20dp"
+        android:layout_marginBottom="24dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <Button
+        android:id="@+id/btnCalculateSave"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginBottom="16dp"
+        android:text="Calculate &amp; Save"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:backgroundTint="@color/accentTeal" />
+
+    <Button
+        android:id="@+id/btnClear"
+        android:layout_width="wrap_content"
+        android:layout_height="56dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="32dp"
+        android:paddingHorizontal="40dp"
+        android:text="Clear"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:backgroundTint="@color/accentTeal" />
+
+</LinearLayout>
